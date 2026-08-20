@@ -3,11 +3,12 @@ import { Link } from "@/components/Link";
 import { NewsCard } from "@/components/NewsCard";
 import { PlaceholderNotice } from "@/components/PlaceholderNotice";
 import { ResearchAreaCard } from "@/components/ResearchAreaCard";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { getRepository } from "@/data/repository";
 import { localizedField } from "@/data/types";
 import { getPageHref } from "@/i18n/pathnames";
 import type { Locale } from "@/i18n/routing";
+import { cn } from "@/lib/utils";
 
 export async function HomePage({ locale }: { locale: Locale }) {
   setRequestLocale(locale);
@@ -33,16 +34,15 @@ export async function HomePage({ locale }: { locale: Locale }) {
           <p className="text-base leading-relaxed text-primary-foreground/90 sm:text-lg">
             {localizedField(lab, "mission", locale)}
           </p>
-          <Button
-            render={
-              <Link
-                href={getPageHref(locale, "join")}
-                className="inline-flex h-9 items-center rounded-lg bg-accent px-4 text-sm font-medium text-accent-foreground hover:bg-accent/90"
-              />
-            }
+          <Link
+            href={getPageHref(locale, "join")}
+            className={cn(
+              buttonVariants({ size: "lg" }),
+              "bg-accent text-accent-foreground hover:bg-accent/90",
+            )}
           >
             {t("joinCta")}
-          </Button>
+          </Link>
         </div>
       </section>
 

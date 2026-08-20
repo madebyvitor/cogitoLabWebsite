@@ -1,9 +1,10 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { PageHeader } from "@/components/PageHeader";
 import { PlaceholderNotice } from "@/components/PlaceholderNotice";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { getRepository } from "@/data/repository";
 import type { Locale } from "@/i18n/routing";
+import { cn } from "@/lib/utils";
 
 export async function JoinPage({ locale }: { locale: Locale }) {
   setRequestLocale(locale);
@@ -17,16 +18,9 @@ export async function JoinPage({ locale }: { locale: Locale }) {
       <PageHeader title={t("title")} description={t("description")} />
       <PlaceholderNotice message={tCommon("placeholderNotice")} />
       <p className="leading-relaxed text-muted-foreground">{t("body")}</p>
-      <Button
-        render={
-          <a
-            href={`mailto:${lab.email}`}
-            className="inline-flex h-9 items-center rounded-lg bg-primary px-4 text-sm font-medium text-primary-foreground hover:bg-primary/90"
-          />
-        }
-      >
+      <a href={`mailto:${lab.email}`} className={cn(buttonVariants({ size: "lg" }))}>
         {t("cta")}
-      </Button>
+      </a>
     </div>
   );
 }

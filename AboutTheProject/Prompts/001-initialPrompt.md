@@ -1,0 +1,1 @@
+Leia o arquivo ``AboutTheProject/Specs/Foundation/@AboutTheProject/Specs/Foundation/InitialSpec.md`` e crie a versão inicial do website, seguindo as tecnologias, requisitos e regras apresentadas no mesmo.

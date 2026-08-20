@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cogito Lab Website
 
-## Getting Started
+Site institucional estático do grupo de pesquisa **Cogito Lab** — Engenharia de Software, IA, qualidade, testes, mobile/IoT e inovação.
 
-First, run the development server:
+## Requisitos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js 20+
+- npm
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Comando | Descrição |
+|---------|-----------|
+| `npm run dev` | Servidor de desenvolvimento |
+| `npm run build` | Build estático em `out/` |
+| `npm start` | Serve `out/` localmente |
+| `npm run lint` | ESLint |
+| `npm run format` | Prettier (write) |
+| `npm run typecheck` | TypeScript |
+| `npm run test` | Vitest |
+| `npm run test:e2e` | Playwright (requer `npm run build` antes) |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Estrutura
 
-## Learn More
+- `src/app/` — rotas Next.js (App Router, export estático)
+- `src/data/` — tipos, seed e repositório de conteúdo
+- `src/i18n/` — configuração pt/en e pathnames localizados
+- `messages/` — strings de UI
+- `supabase/migrations/` — schema SQL alinhado aos tipos (RLS leitura pública)
+- `AboutTheProject/` — especificação e documentação do produto
 
-To learn more about Next.js, take a look at the following resources:
+## Internacionalização
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Português: `/pt/...` (ex.: `/pt/sobre/`)
+- Inglês: `/en/...` (ex.: `/en/about/`)
+- A raiz `/` redireciona para `/pt/` ou `/en/` conforme o navegador.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy (GitHub Pages)
 
-## Deploy on Vercel
+1. Habilite **GitHub Pages** com source **GitHub Actions**.
+2. Push na branch `main` dispara `.github/workflows/pages.yml`.
+3. Para **project site** (`https://USER.github.io/REPO/`), defina a variable de repositório `NEXT_PUBLIC_BASE_PATH` como `/REPO` (ou exporte no workflow).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Copie `.env.example` para `.env.local` se precisar testar `basePath` localmente.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Supabase (fase seguinte)
+
+1. Crie um projeto Supabase e aplique `supabase/migrations/20260320000000_initial_schema.sql`.
+2. Implemente um repositório que busque dados no **build** (SSG).
+3. Configure rebuild via GitHub Actions quando o conteúdo mudar.
+
+## Conteúdo
+
+Os dados atuais são **placeholders** fielmente estruturados (6 áreas de pesquisa, projetos CNPq/FAPEMIG citados na spec, pessoas, publicações, notícias). Substitua em `src/data/seed/content.ts` ou migre para Supabase.
+
+## Registro de engenharia
+
+Ver [DEVELOPMENT_LOG.md](DEVELOPMENT_LOG.md).

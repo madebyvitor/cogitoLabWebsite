@@ -1,0 +1,134 @@
+{
+  "Metadata": {
+    "title": "Cogito Lab",
+    "description": "Grupo de pesquisa em Engenharia de Software, IA, qualidade, testes e inovação."
+  },
+  "Common": {
+    "skipToContent": "Ir para o conteúdo",
+    "menu": "Menu",
+    "close": "Fechar",
+    "readMore": "Saiba mais",
+    "viewAll": "Ver tudo",
+    "back": "Voltar",
+    "ongoing": "Em andamento",
+    "placeholderNotice": "Conteúdo placeholder — substitua pelos dados oficiais do laboratório.",
+    "language": "Idioma",
+    "pt": "Português",
+    "en": "English"
+  },
+  "Nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "research": "Pesquisa",
+    "people": "Pessoas",
+    "projects": "Projetos",
+    "publications": "Publicações",
+    "news": "Notícias",
+    "join": "Participe",
+    "partners": "Parceiros",
+    "contact": "Contato"
+  },
+  "Home": {
+    "heroTitle": "Cogito Lab",
+    "heroSubtitle": "Cogito, ergo sum",
+    "missionHeading": "Missão",
+    "areasHeading": "Áreas de pesquisa",
+    "newsHeading": "Notícias recentes",
+    "joinCta": "Participe do Cogito Lab",
+    "joinDescription": "Estamos sempre abertos a novos estudantes, colaboradores e parcerias."
+  },
+  "About": {
+    "title": "Sobre o laboratório",
+    "institutionsHeading": "Instituições associadas"
+  },
+  "Research": {
+    "title": "Áreas de pesquisa",
+    "description": "Seis linhas principais que estruturam a produção científica do grupo.",
+    "detailHeading": "Descrição"
+  },
+  "People": {
+    "title": "Pessoas",
+    "description": "Pesquisadores, colaboradores, estudantes e ex-alunos do laboratório.",
+    "all": "Todos",
+    "roles": {
+      "researcher": "Pesquisadores",
+      "collaborator": "Colaboradores",
+      "phd": "Doutorandos",
+      "msc": "Mestrantes",
+      "ic": "Iniciação científica",
+      "alumni": "Ex-alunos"
+    },
+    "links": {
+      "lattes": "Lattes",
+      "orcid": "ORCID",
+      "github": "GitHub",
+      "website": "Website",
+      "scholar": "Google Scholar",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "Projects": {
+    "title": "Projetos de pesquisa",
+    "description": "Projetos financiados e suas publicações associadas.",
+    "coordinator": "Coordenação",
+    "period": "Vigência",
+    "publications": "Publicações geradas"
+  },
+  "Publications": {
+    "title": "Publicações e artefatos",
+    "papersHeading": "Papers",
+    "artifactsHeading": "Software, ferramentas e datasets",
+    "authors": "Autores",
+    "doi": "DOI",
+    "artifactKinds": {
+      "software": "Software",
+      "tool": "Ferramenta",
+      "dataset": "Dataset",
+      "repository": "Repositório"
+    }
+  },
+  "News": {
+    "title": "Notícias e atividades",
+    "description": "Papers aceitos, conferências, prêmios e defesas.",
+    "kinds": {
+      "paper": "Paper",
+      "conference": "Conferência",
+      "award": "Prêmio",
+      "defense": "Defesa",
+      "other": "Atividade"
+    }
+  },
+  "Join": {
+    "title": "Participe do Cogito Lab",
+    "description": "Convite para estudantes e colaboradores interessados em engenharia de software empírica e aplicada.",
+    "body": "Se você tem interesse em mestrado, doutorado, iniciação científica ou colaboração científica, envie um e-mail com seu CV, áreas de interesse e uma breve carta de motivação. Este texto é placeholder até a política oficial de recrutamento ser publicada.",
+    "cta": "Enviar e-mail"
+  },
+  "Partners": {
+    "title": "Parcerias",
+    "description": "Agências de fomento, instituições e parceiros da indústria.",
+    "kinds": {
+      "funding": "Fomento",
+      "university": "Instituições",
+      "industry": "Indústria"
+    }
+  },
+  "Contact": {
+    "title": "Contato",
+    "description": "Entre em contato com o laboratório.",
+    "email": "E-mail",
+    "location": "Localização",
+    "github": "GitHub Organization",
+    "social": "Redes sociais"
+  },
+  "Footer": {
+    "tagline": "Pesquisa em Engenharia de Software com evidência e impacto.",
+    "rights": "Todos os direitos reservados."
+  },
+  "LocaleRedirect": {
+    "title": "Cogito Lab",
+    "description": "Escolha seu idioma ou aguarde o redirecionamento automático.",
+    "pt": "Continuar em Português",
+    "en": "Continue in English"
+  }
+}

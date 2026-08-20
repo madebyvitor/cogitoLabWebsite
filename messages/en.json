@@ -1,0 +1,134 @@
+{
+  "Metadata": {
+    "title": "Cogito Lab",
+    "description": "Research group in Software Engineering, AI, quality, testing and innovation."
+  },
+  "Common": {
+    "skipToContent": "Skip to content",
+    "menu": "Menu",
+    "close": "Close",
+    "readMore": "Read more",
+    "viewAll": "View all",
+    "back": "Back",
+    "ongoing": "Ongoing",
+    "placeholderNotice": "Placeholder content — replace with the lab’s official data.",
+    "language": "Language",
+    "pt": "Português",
+    "en": "English"
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "research": "Research",
+    "people": "People",
+    "projects": "Projects",
+    "publications": "Publications",
+    "news": "News",
+    "join": "Join",
+    "partners": "Partners",
+    "contact": "Contact"
+  },
+  "Home": {
+    "heroTitle": "Cogito Lab",
+    "heroSubtitle": "Cogito, ergo sum",
+    "missionHeading": "Mission",
+    "areasHeading": "Research areas",
+    "newsHeading": "Recent news",
+    "joinCta": "Join Cogito Lab",
+    "joinDescription": "We welcome new students, collaborators and partnerships."
+  },
+  "About": {
+    "title": "About the lab",
+    "institutionsHeading": "Associated institutions"
+  },
+  "Research": {
+    "title": "Research areas",
+    "description": "Six main lines that structure the group’s scientific output.",
+    "detailHeading": "Description"
+  },
+  "People": {
+    "title": "People",
+    "description": "Researchers, collaborators, students and alumni of the lab.",
+    "all": "All",
+    "roles": {
+      "researcher": "Researchers",
+      "collaborator": "Collaborators",
+      "phd": "PhD students",
+      "msc": "MSc students",
+      "ic": "Undergraduate research",
+      "alumni": "Alumni"
+    },
+    "links": {
+      "lattes": "Lattes",
+      "orcid": "ORCID",
+      "github": "GitHub",
+      "website": "Website",
+      "scholar": "Google Scholar",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "Projects": {
+    "title": "Research projects",
+    "description": "Funded projects and their related publications.",
+    "coordinator": "Coordinator",
+    "period": "Period",
+    "publications": "Related publications"
+  },
+  "Publications": {
+    "title": "Publications and artifacts",
+    "papersHeading": "Papers",
+    "artifactsHeading": "Software, tools and datasets",
+    "authors": "Authors",
+    "doi": "DOI",
+    "artifactKinds": {
+      "software": "Software",
+      "tool": "Tool",
+      "dataset": "Dataset",
+      "repository": "Repository"
+    }
+  },
+  "News": {
+    "title": "News and activities",
+    "description": "Accepted papers, conferences, awards and defenses.",
+    "kinds": {
+      "paper": "Paper",
+      "conference": "Conference",
+      "award": "Award",
+      "defense": "Defense",
+      "other": "Activity"
+    }
+  },
+  "Join": {
+    "title": "Join Cogito Lab",
+    "description": "An invitation for students and collaborators interested in empirical and applied software engineering.",
+    "body": "If you are interested in MSc, PhD, undergraduate research or scientific collaboration, send an email with your CV, research interests and a short motivation letter. This text is a placeholder until the official recruitment policy is published.",
+    "cta": "Send email"
+  },
+  "Partners": {
+    "title": "Partnerships",
+    "description": "Funding agencies, institutions and industry partners.",
+    "kinds": {
+      "funding": "Funding",
+      "university": "Institutions",
+      "industry": "Industry"
+    }
+  },
+  "Contact": {
+    "title": "Contact",
+    "description": "Get in touch with the lab.",
+    "email": "Email",
+    "location": "Location",
+    "github": "GitHub Organization",
+    "social": "Social media"
+  },
+  "Footer": {
+    "tagline": "Software Engineering research with evidence and impact.",
+    "rights": "All rights reserved."
+  },
+  "LocaleRedirect": {
+    "title": "Cogito Lab",
+    "description": "Choose your language or wait for automatic redirect.",
+    "pt": "Continue in Portuguese",
+    "en": "Continue in English"
+  }
+}

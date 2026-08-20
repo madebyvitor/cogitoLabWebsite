@@ -35,23 +35,6 @@ Site institucional estático do grupo de pesquisa **Cogito Lab** — Engenharia 
 - Inglês: `/en/...` (ex.: `/en/about/`)
 - A raiz `/` redireciona para `/pt/` ou `/en/` conforme o navegador.
 
-## Deploy (GitHub Pages)
-
-1. Habilite **GitHub Pages** com source **GitHub Actions**.
-2. Push na branch `main` dispara `.github/workflows/pages.yml`.
-3. Para **project site** (`https://USER.github.io/REPO/`), defina a variable de repositório `NEXT_PUBLIC_BASE_PATH` como `/REPO` (ou exporte no workflow).
-
-Copie `.env.example` para `.env.local` se precisar testar `basePath` localmente.
-
-## Supabase (fase seguinte)
-
-1. Crie um projeto Supabase e aplique `supabase/migrations/20260320000000_initial_schema.sql`.
-2. Implemente um repositório que busque dados no **build** (SSG).
-3. Configure rebuild via GitHub Actions quando o conteúdo mudar.
-
-## Conteúdo
-
-Os dados atuais são **placeholders** fielmente estruturados (6 áreas de pesquisa, projetos CNPq/FAPEMIG citados na spec, pessoas, publicações, notícias). Substitua em `src/data/seed/content.ts` ou migre para Supabase.
 
 ## Registro de engenharia
 
